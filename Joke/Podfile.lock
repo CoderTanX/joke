@@ -1,0 +1,15 @@
+PODS:
+  - Alamofire (4.0.1)
+  - iCarousel (1.8.3)
+
+DEPENDENCIES:
+  - Alamofire
+  - iCarousel
+
+SPEC CHECKSUMS:
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
+
+PODFILE CHECKSUM: 3d6f031ffd1db9e30cec0e1dc0b01f658d302414
+
+COCOAPODS: 1.0.1

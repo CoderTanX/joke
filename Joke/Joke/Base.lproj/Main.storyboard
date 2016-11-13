@@ -5,10 +5,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="hay-rf-nak">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Gkc-1D-fSo" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Gkc-1D-fSo" customClass="TabBarViewController" customModule="Joke" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="3PZ-95-NjL">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>

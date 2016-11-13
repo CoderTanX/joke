@@ -5,4 +5,5 @@ target 'Joke' do
 use_frameworks!
 pod 'iCarousel'
 pod 'Alamofire'
+pod 'PKHUD'
 end

@@ -5,10 +5,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--段子-->
+        <!--Data Source-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PassageViewController" customModule="Joke" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,9 +16,27 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mLo-SQ-DzP" customClass="iCarousel">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="gIY-J8-YKr"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="fUc-XZ-mAd"/>
+                                </connections>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mLo-SQ-DzP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="A0K-xZ-acA"/>
+                            <constraint firstItem="mLo-SQ-DzP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="MRx-rH-8wm"/>
+                            <constraint firstAttribute="trailing" secondItem="mLo-SQ-DzP" secondAttribute="trailing" id="hwn-6X-N7i"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mLo-SQ-DzP" secondAttribute="bottom" id="lxm-wM-A1X"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="段子" id="3O9-xa-ZfC"/>
+                    <connections>
+                        <outlet property="carousel" destination="mLo-SQ-DzP" id="ma6-Mr-wQ3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -31,7 +49,6 @@
                     <tabBarItem key="tabBarItem" title="段子" image="passage" id="1AS-O6-gYU"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4_7.fullscreen"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5bv-PT-mZ6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

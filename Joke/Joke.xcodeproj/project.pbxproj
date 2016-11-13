@@ -14,9 +14,15 @@
 		EA95AF531DD72B04003E51FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA95AF511DD72B04003E51FF /* LaunchScreen.storyboard */; };
 		EA95AF5E1DD72B04003E51FF /* JokeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA95AF5D1DD72B04003E51FF /* JokeTests.swift */; };
 		EA95AF691DD72B04003E51FF /* JokeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA95AF681DD72B04003E51FF /* JokeUITests.swift */; };
+		EACFCD621DD883F200B6EA3E /* PassageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACFCD611DD883F200B6EA3E /* PassageModel.swift */; };
+		EACFCD661DD8B1F700B6EA3E /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACFCD651DD8B1F700B6EA3E /* TabBarViewController.swift */; };
 		EAE706D21DD7F7BD00FC2F31 /* Passage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAE706D11DD7F7BD00FC2F31 /* Passage.storyboard */; };
 		EAE706D41DD7F7ED00FC2F31 /* GodReply.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAE706D31DD7F7ED00FC2F31 /* GodReply.storyboard */; };
 		EAE706D91DD7F87900FC2F31 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAE706D81DD7F87900FC2F31 /* Setting.storyboard */; };
+		EAE706DD1DD7FB9200FC2F31 /* PassageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE706DC1DD7FB9200FC2F31 /* PassageViewController.swift */; };
+		EAE706E11DD8013300FC2F31 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE706E01DD8013300FC2F31 /* UIColor+Extension.swift */; };
+		EAE706E31DD83B9900FC2F31 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE706E21DD83B9900FC2F31 /* NetworkTools.swift */; };
+		EAE706E51DD8446C00FC2F31 /* PassageViewMoel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE706E41DD8446C00FC2F31 /* PassageViewMoel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,9 +58,15 @@
 		EA95AF641DD72B04003E51FF /* JokeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JokeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA95AF681DD72B04003E51FF /* JokeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeUITests.swift; sourceTree = "<group>"; };
 		EA95AF6A1DD72B04003E51FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EACFCD611DD883F200B6EA3E /* PassageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassageModel.swift; sourceTree = "<group>"; };
+		EACFCD651DD8B1F700B6EA3E /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		EAE706D11DD7F7BD00FC2F31 /* Passage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Passage.storyboard; sourceTree = "<group>"; };
 		EAE706D31DD7F7ED00FC2F31 /* GodReply.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GodReply.storyboard; sourceTree = "<group>"; };
 		EAE706D81DD7F87900FC2F31 /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		EAE706DC1DD7FB9200FC2F31 /* PassageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassageViewController.swift; sourceTree = "<group>"; };
+		EAE706E01DD8013300FC2F31 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		EAE706E21DD83B9900FC2F31 /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
+		EAE706E41DD8446C00FC2F31 /* PassageViewMoel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassageViewMoel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,9 +168,10 @@
 		EAE706C11DD7F74000FC2F31 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				EAE706C21DD7F74000FC2F31 /* GodReply(神回复) */,
 				EAE706C71DD7F74000FC2F31 /* Passage(段子) */,
+				EAE706C21DD7F74000FC2F31 /* GodReply(神回复) */,
 				EAE706CC1DD7F74000FC2F31 /* Setting(设置) */,
+				EAE706DE1DD8012600FC2F31 /* Tools */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -218,6 +231,8 @@
 		EAE706C81DD7F74000FC2F31 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EAE706DC1DD7FB9200FC2F31 /* PassageViewController.swift */,
+				EACFCD651DD8B1F700B6EA3E /* TabBarViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -225,6 +240,7 @@
 		EAE706C91DD7F74000FC2F31 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EACFCD611DD883F200B6EA3E /* PassageModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -239,6 +255,7 @@
 		EAE706CB1DD7F74000FC2F31 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				EAE706E41DD8446C00FC2F31 /* PassageViewMoel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -281,6 +298,23 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EAE706DE1DD8012600FC2F31 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				EAE706DF1DD8012600FC2F31 /* Extensions */,
+				EAE706E21DD83B9900FC2F31 /* NetworkTools.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		EAE706DF1DD8012600FC2F31 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EAE706E01DD8013300FC2F31 /* UIColor+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -474,7 +508,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAE706E31DD83B9900FC2F31 /* NetworkTools.swift in Sources */,
+				EAE706E51DD8446C00FC2F31 /* PassageViewMoel.swift in Sources */,
+				EAE706E11DD8013300FC2F31 /* UIColor+Extension.swift in Sources */,
 				EA95AF491DD72B04003E51FF /* AppDelegate.swift in Sources */,
+				EACFCD661DD8B1F700B6EA3E /* TabBarViewController.swift in Sources */,
+				EACFCD621DD883F200B6EA3E /* PassageModel.swift in Sources */,
+				EAE706DD1DD7FB9200FC2F31 /* PassageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

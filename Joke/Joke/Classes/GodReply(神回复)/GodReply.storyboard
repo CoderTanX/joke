@@ -1,29 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="WJh-Yq-Kgv">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="WJh-Yq-Kgv">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--神回复-->
-        <scene sceneID="AhX-RJ-wOP">
-            <objects>
-                <viewController id="F7i-M8-h4X" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="xjW-7z-OYA"/>
-                        <viewControllerLayoutGuide type="bottom" id="K68-Sz-zQb"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="E7i-0f-fjn">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="神回复" id="4et-V3-iUw"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aAz-Qc-hcP" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2162" y="928"/>
-        </scene>
         <!--神回复-->
         <scene sceneID="S8r-eV-Fqa">
             <objects>
@@ -31,19 +12,55 @@
                     <tabBarItem key="tabBarItem" title="神回复" image="smile" id="Tnt-P4-heV"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4_7.fullscreen"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="KHa-WM-yuN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="F7i-M8-h4X" kind="relationship" relationship="rootViewController" id="2si-iu-JJ0"/>
+                        <segue destination="EB5-2b-zaC" kind="relationship" relationship="rootViewController" id="s1q-Gn-rw1"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3cA-Yi-gcv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1076" y="928"/>
+        </scene>
+        <!--Data Source-->
+        <scene sceneID="gck-sl-uxo">
+            <objects>
+                <viewController id="EB5-2b-zaC" customClass="GodReplyViewController" customModule="Joke" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UKC-B0-Q8k"/>
+                        <viewControllerLayoutGuide type="bottom" id="bPg-nF-8i1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Lzs-pI-Abv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3rM-JZ-14l" customClass="iCarousel">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="EB5-2b-zaC" id="by4-x5-0wZ"/>
+                                    <outlet property="delegate" destination="EB5-2b-zaC" id="IAq-5D-jiJ"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bPg-nF-8i1" firstAttribute="top" secondItem="3rM-JZ-14l" secondAttribute="bottom" id="Pcs-BU-WXQ"/>
+                            <constraint firstItem="3rM-JZ-14l" firstAttribute="top" secondItem="UKC-B0-Q8k" secondAttribute="bottom" id="vjX-VO-nib"/>
+                            <constraint firstItem="3rM-JZ-14l" firstAttribute="leading" secondItem="Lzs-pI-Abv" secondAttribute="leading" id="wNU-CJ-Hen"/>
+                            <constraint firstAttribute="trailing" secondItem="3rM-JZ-14l" secondAttribute="trailing" id="wxe-ny-cTy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="神回复" id="982-ot-sgM"/>
+                    <connections>
+                        <outlet property="carousel" destination="3rM-JZ-14l" id="kKz-L5-xpR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZQK-xq-9rf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1873" y="940"/>
         </scene>
     </scenes>
     <resources>

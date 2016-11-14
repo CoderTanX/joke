@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		79AF3697770F533DE271EA57 /* Pods_Joke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 356001F22E39945A3FFEF7C5 /* Pods_Joke.framework */; };
+		DB46779C1DD95B4200672C77 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB46779B1DD95B4200672C77 /* NSDate+Extension.swift */; };
+		DBA279A71DD98FED008C9A6B /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA279A61DD98FED008C9A6B /* ChatModel.swift */; };
+		DBA279A91DD990A4008C9A6B /* ChatViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA279A81DD990A4008C9A6B /* ChatViewCell.swift */; };
+		DBA279AB1DD9B9C8008C9A6B /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA279AA1DD9B9C8008C9A6B /* SettingViewController.swift */; };
+		DBA279AD1DD9BD46008C9A6B /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA279AC1DD9BD46008C9A6B /* Const.swift */; };
+		DBA279AF1DD9C288008C9A6B /* ChatTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA279AE1DD9C288008C9A6B /* ChatTableView.swift */; };
+		DBA279B11DD9CBA3008C9A6B /* GodReplyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA279B01DD9CBA3008C9A6B /* GodReplyViewController.swift */; };
+		DBA279B31DD9CD54008C9A6B /* UIImage-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA279B21DD9CD54008C9A6B /* UIImage-Extension.swift */; };
 		EA95AF491DD72B04003E51FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA95AF481DD72B04003E51FF /* AppDelegate.swift */; };
 		EA95AF4E1DD72B04003E51FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA95AF4C1DD72B04003E51FF /* Main.storyboard */; };
 		EA95AF501DD72B04003E51FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA95AF4F1DD72B04003E51FF /* Assets.xcassets */; };
@@ -46,6 +54,14 @@
 		356001F22E39945A3FFEF7C5 /* Pods_Joke.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Joke.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8996E804984F416949E9D04 /* Pods-Joke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Joke.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Joke/Pods-Joke.debug.xcconfig"; sourceTree = "<group>"; };
 		DAC7AB8AA33A07800E488D29 /* Pods-Joke.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Joke.release.xcconfig"; path = "Pods/Target Support Files/Pods-Joke/Pods-Joke.release.xcconfig"; sourceTree = "<group>"; };
+		DB46779B1DD95B4200672C77 /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
+		DBA279A61DD98FED008C9A6B /* ChatModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
+		DBA279A81DD990A4008C9A6B /* ChatViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewCell.swift; sourceTree = "<group>"; };
+		DBA279AA1DD9B9C8008C9A6B /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingViewController.swift; path = "Joke/Classes/GodReply(神回复)/View/SettingViewController.swift"; sourceTree = SOURCE_ROOT; };
+		DBA279AC1DD9BD46008C9A6B /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		DBA279AE1DD9C288008C9A6B /* ChatTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableView.swift; sourceTree = "<group>"; };
+		DBA279B01DD9CBA3008C9A6B /* GodReplyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GodReplyViewController.swift; sourceTree = "<group>"; };
+		DBA279B21DD9CD54008C9A6B /* UIImage-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage-Extension.swift"; sourceTree = "<group>"; };
 		EA95AF451DD72B04003E51FF /* Joke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Joke.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA95AF481DD72B04003E51FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA95AF4D1DD72B04003E51FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -110,6 +126,38 @@
 				356001F22E39945A3FFEF7C5 /* Pods_Joke.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DBA279A01DD98EFA008C9A6B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DBA279B01DD9CBA3008C9A6B /* GodReplyViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DBA279A11DD98EFA008C9A6B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DBA279A61DD98FED008C9A6B /* ChatModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DBA279A21DD98EFA008C9A6B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DBA279A81DD990A4008C9A6B /* ChatViewCell.swift */,
+				DBA279AE1DD9C288008C9A6B /* ChatTableView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DBA279A31DD98EFA008C9A6B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		EA95AF3C1DD72B04003E51FF = {
@@ -180,40 +228,12 @@
 			isa = PBXGroup;
 			children = (
 				EAE706D31DD7F7ED00FC2F31 /* GodReply.storyboard */,
-				EAE706C31DD7F74000FC2F31 /* Controller */,
-				EAE706C41DD7F74000FC2F31 /* Model */,
-				EAE706C51DD7F74000FC2F31 /* View */,
-				EAE706C61DD7F74000FC2F31 /* ViewModel */,
+				DBA279A01DD98EFA008C9A6B /* Controller */,
+				DBA279A11DD98EFA008C9A6B /* Model */,
+				DBA279A21DD98EFA008C9A6B /* View */,
+				DBA279A31DD98EFA008C9A6B /* ViewModel */,
 			);
 			path = "GodReply(神回复)";
-			sourceTree = "<group>";
-		};
-		EAE706C31DD7F74000FC2F31 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		EAE706C41DD7F74000FC2F31 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		EAE706C51DD7F74000FC2F31 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		EAE706C61DD7F74000FC2F31 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		EAE706C71DD7F74000FC2F31 /* Passage(段子) */ = {
@@ -275,6 +295,7 @@
 		EAE706CD1DD7F74000FC2F31 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				DBA279AA1DD9B9C8008C9A6B /* SettingViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -305,6 +326,7 @@
 			children = (
 				EAE706DF1DD8012600FC2F31 /* Extensions */,
 				EAE706E21DD83B9900FC2F31 /* NetworkTools.swift */,
+				DBA279AC1DD9BD46008C9A6B /* Const.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -312,7 +334,9 @@
 		EAE706DF1DD8012600FC2F31 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				DBA279B21DD9CD54008C9A6B /* UIImage-Extension.swift */,
 				EAE706E01DD8013300FC2F31 /* UIColor+Extension.swift */,
+				DB46779B1DD95B4200672C77 /* NSDate+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -389,6 +413,7 @@
 					EA95AF441DD72B04003E51FF = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = PJB3LYFWDE;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					EA95AF581DD72B04003E51FF = {
@@ -508,13 +533,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB46779C1DD95B4200672C77 /* NSDate+Extension.swift in Sources */,
 				EAE706E31DD83B9900FC2F31 /* NetworkTools.swift in Sources */,
 				EAE706E51DD8446C00FC2F31 /* PassageViewMoel.swift in Sources */,
 				EAE706E11DD8013300FC2F31 /* UIColor+Extension.swift in Sources */,
+				DBA279B31DD9CD54008C9A6B /* UIImage-Extension.swift in Sources */,
 				EA95AF491DD72B04003E51FF /* AppDelegate.swift in Sources */,
+				DBA279A71DD98FED008C9A6B /* ChatModel.swift in Sources */,
 				EACFCD661DD8B1F700B6EA3E /* TabBarViewController.swift in Sources */,
 				EACFCD621DD883F200B6EA3E /* PassageModel.swift in Sources */,
+				DBA279A91DD990A4008C9A6B /* ChatViewCell.swift in Sources */,
 				EAE706DD1DD7FB9200FC2F31 /* PassageViewController.swift in Sources */,
+				DBA279AB1DD9B9C8008C9A6B /* SettingViewController.swift in Sources */,
+				DBA279AD1DD9BD46008C9A6B /* Const.swift in Sources */,
+				DBA279B11DD9CBA3008C9A6B /* GodReplyViewController.swift in Sources */,
+				DBA279AF1DD9C288008C9A6B /* ChatTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

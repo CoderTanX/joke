@@ -41,16 +41,16 @@ extension PassageViewController {
         gradient.colors = colorses[0]
         carousel.layer .insertSublayer(gradient, at: 0)
         carousel.type = .coverFlow2
-        carousel.scrollSpeed = 0.5
+        carousel.scrollSpeed = 0.7
     }
 }
 
 //MARK:- 请求数据
 extension PassageViewController {
     fileprivate func loadData(){
-        HUD.show(.progress)
+//        HUD.show(.progress)
         passageVM.loadPassageData {
-            HUD.hide()
+//            HUD.hide()
             self.carousel.reloadData()
         }
     }
@@ -71,7 +71,7 @@ extension PassageViewController: iCarouselDataSource,iCarouselDelegate {
             itemView = UIView(frame: CGRect(x: 0, y: 0, width: (self.view?.bounds.width)! * 0.7, height: (self.view?.bounds.height)! * 0.6))
             itemView.layer.cornerRadius = 5
             itemView.layer.masksToBounds = true
-            itemView.backgroundColor = UIColor.white
+            itemView.backgroundColor = UIColor(r: 240, g: 240, b: 240)
             itemView.alpha = 0.9
             label = UILabel(frame: CGRect(x: 0, y: 0, width: itemView.bounds.width * 0.9, height: itemView.bounds.height * 0.9))
             label.center = itemView.center
@@ -84,7 +84,7 @@ extension PassageViewController: iCarouselDataSource,iCarouselDelegate {
         }
         let passageModel = passageVM.passageModels[index]
         
-        label.text = passageModel.content
+        label.text = passageModel.content + "\n\n" + Date.createDateString(passageModel.time)
         return itemView
     }
     

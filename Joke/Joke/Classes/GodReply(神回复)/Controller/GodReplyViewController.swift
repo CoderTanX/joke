@@ -9,20 +9,32 @@
 import UIKit
 import iCarousel
 class GodReplyViewController: UIViewController {
-
+    
+    fileprivate lazy var godReplyMV: GodReplyViewModel = GodReplyViewModel()
+    
     @IBOutlet weak var carousel: iCarousel!
     override func viewDidLoad() {
         super.viewDidLoad()
         carousel.scrollSpeed = 0.7
         automaticallyAdjustsScrollViewInsets = false
+        loadData()
     }
 
+}
+
+//MARK: - 请求数据
+extension GodReplyViewController {
+    fileprivate func loadData(){
+        godReplyMV.loadChatData { 
+            self.carousel.reloadData()
+        }
+    }
 }
 
 //MARK:- iCarousel数据源&代理
 extension GodReplyViewController: iCarouselDataSource,iCarouselDelegate {
     func numberOfItems(in carousel: iCarousel) -> Int {
-        return 20
+        return godReplyMV.chatsGroup.count
     }
     func carousel(_ carousel: iCarousel, viewForItemAt index: Int, reusing view: UIView?) -> UIView{
         var itemView: ChatTableView
@@ -34,6 +46,7 @@ extension GodReplyViewController: iCarouselDataSource,iCarouselDelegate {
             itemView.layer.cornerRadius = 5
             itemView.layer.masksToBounds = true
         }
+        itemView.chatModels = godReplyMV.chatsGroup[index]
         return itemView
     }
     

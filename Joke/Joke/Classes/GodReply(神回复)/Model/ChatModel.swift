@@ -12,13 +12,10 @@ class ChatModel: NSObject {
     ///聊天内容
     var content: String = ""
     
-    ///头像
-    var icon: String = ""
-    
     ///角色
-    var role : String = "" {
+    var role : Int = 0 {
         didSet {
-            if role == "MINE" {
+            if role == 0 {
                 isMe = true
             }else{
                 isMe = false

@@ -26,10 +26,10 @@ class ChatViewCell: UITableViewCell {
             contentView.addSubview(bubbleImgView)
             bubbleImgView.addSubview(contentLabel)
             //绑定数据
-            headerImgView.image = UIImage(named: chatModel.icon)?.circleImage()
+            headerImgView.image = chatModel.isMe ? UIImage(named: "katong")?.circleImage() : UIImage(named: "mm")?.circleImage()
             bubbleImgView.image = chatModel.isMe ? UIImage(named: "chatfrom_bg_normal") : UIImage(named: "chatto_bg_normal")
             contentLabel.text = chatModel.content
-            contentLabel.textAlignment = chatModel.isMe ? .left : .right
+//            contentLabel.textAlignment = chatModel.isMe ? .left : .right
             
             //设置约束
             let views: [String: Any] = ["headerImgView": headerImgView, "content": contentLabel, "bubble": bubbleImgView]

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		79AF3697770F533DE271EA57 /* Pods_Joke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 356001F22E39945A3FFEF7C5 /* Pods_Joke.framework */; };
 		DB46779C1DD95B4200672C77 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB46779B1DD95B4200672C77 /* NSDate+Extension.swift */; };
+		DB74F80B1DDB031F009E06F6 /* GodReplyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB74F80A1DDB031F009E06F6 /* GodReplyViewModel.swift */; };
 		DBA279A71DD98FED008C9A6B /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA279A61DD98FED008C9A6B /* ChatModel.swift */; };
 		DBA279A91DD990A4008C9A6B /* ChatViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA279A81DD990A4008C9A6B /* ChatViewCell.swift */; };
 		DBA279AB1DD9B9C8008C9A6B /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA279AA1DD9B9C8008C9A6B /* SettingViewController.swift */; };
@@ -55,6 +56,7 @@
 		C8996E804984F416949E9D04 /* Pods-Joke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Joke.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Joke/Pods-Joke.debug.xcconfig"; sourceTree = "<group>"; };
 		DAC7AB8AA33A07800E488D29 /* Pods-Joke.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Joke.release.xcconfig"; path = "Pods/Target Support Files/Pods-Joke/Pods-Joke.release.xcconfig"; sourceTree = "<group>"; };
 		DB46779B1DD95B4200672C77 /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
+		DB74F80A1DDB031F009E06F6 /* GodReplyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GodReplyViewModel.swift; sourceTree = "<group>"; };
 		DBA279A61DD98FED008C9A6B /* ChatModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
 		DBA279A81DD990A4008C9A6B /* ChatViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewCell.swift; sourceTree = "<group>"; };
 		DBA279AA1DD9B9C8008C9A6B /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingViewController.swift; path = "Joke/Classes/GodReply(神回复)/View/SettingViewController.swift"; sourceTree = SOURCE_ROOT; };
@@ -156,6 +158,7 @@
 		DBA279A31DD98EFA008C9A6B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				DB74F80A1DDB031F009E06F6 /* GodReplyViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -537,6 +540,7 @@
 				EAE706E31DD83B9900FC2F31 /* NetworkTools.swift in Sources */,
 				EAE706E51DD8446C00FC2F31 /* PassageViewMoel.swift in Sources */,
 				EAE706E11DD8013300FC2F31 /* UIColor+Extension.swift in Sources */,
+				DB74F80B1DDB031F009E06F6 /* GodReplyViewModel.swift in Sources */,
 				DBA279B31DD9CD54008C9A6B /* UIImage-Extension.swift in Sources */,
 				EA95AF491DD72B04003E51FF /* AppDelegate.swift in Sources */,
 				DBA279A71DD98FED008C9A6B /* ChatModel.swift in Sources */,

@@ -33,7 +33,18 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mLo-SQ-DzP" secondAttribute="bottom" id="lxm-wM-A1X"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="段子" id="3O9-xa-ZfC"/>
+                    <navigationItem key="navigationItem" title="段子" id="3O9-xa-ZfC">
+                        <barButtonItem key="leftBarButtonItem" systemItem="action" id="5lh-t8-Dog">
+                            <connections>
+                                <action selector="exportItemClick:" destination="BYZ-38-t0r" id="IfL-sf-sdU"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="j5A-LC-tER">
+                            <connections>
+                                <action selector="refreshItemClick:" destination="BYZ-38-t0r" id="3jd-zX-EU0"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="carousel" destination="mLo-SQ-DzP" id="ma6-Mr-wQ3"/>
                     </connections>

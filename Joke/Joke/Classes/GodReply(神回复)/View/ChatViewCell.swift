@@ -26,7 +26,7 @@ class ChatViewCell: UITableViewCell {
             contentView.addSubview(bubbleImgView)
             bubbleImgView.addSubview(contentLabel)
             //绑定数据
-            headerImgView.image = chatModel.isMe ? UIImage(named: "katong")?.circleImage() : UIImage(named: "mm")?.circleImage()
+            headerImgView.image = chatModel.isMe ? UIImage(named: "me")?.circleImage() : UIImage(named: "other")?.circleImage()
             bubbleImgView.image = chatModel.isMe ? UIImage(named: "chatfrom_bg_normal") : UIImage(named: "chatto_bg_normal")
             contentLabel.text = chatModel.content
 //            contentLabel.textAlignment = chatModel.isMe ? .left : .right

@@ -8,11 +8,13 @@
 
 import UIKit
 import iCarousel
+import PKHUD
 class GodReplyViewController: UIViewController {
     
     fileprivate lazy var godReplyMV: GodReplyViewModel = GodReplyViewModel()
     
     @IBOutlet weak var carousel: iCarousel!
+    fileprivate var currentPage: Int = 1
     override func viewDidLoad() {
         super.viewDidLoad()
         carousel.scrollSpeed = 0.7
@@ -24,8 +26,11 @@ class GodReplyViewController: UIViewController {
 
 //MARK: - 请求数据
 extension GodReplyViewController {
+    
     fileprivate func loadData(){
-        godReplyMV.loadChatData { 
+        HUD.show(.progress)
+        godReplyMV.loadChatData {
+            HUD.hide()
             self.carousel.reloadData()
         }
     }
@@ -55,5 +60,17 @@ extension GodReplyViewController: iCarouselDataSource,iCarouselDelegate {
             return value * 1.1
         }
         return value
+    }
+    
+    func carouselDidScroll(_ carousel: iCarousel){
+        if (Int(carousel.scrollOffset) + 1)/10 == currentPage {
+            currentPage += 1
+            //            print("++++")
+            HUD.show(.progress)
+            godReplyMV.loadChatData(currentPage, finishedCallBack: {
+                HUD.hide()
+                carousel.reloadData()
+            })
+        }
     }
 }

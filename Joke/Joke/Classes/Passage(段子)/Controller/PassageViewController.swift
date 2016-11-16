@@ -32,6 +32,7 @@ class PassageViewController: UIViewController {
         loadData()
     }
 
+ 
 }
 
 //MARK:- 设置UI界面
@@ -44,14 +45,28 @@ extension PassageViewController {
         carousel.scrollSpeed = 0.7
     }
 }
+//MARK:- 监听点击数据
+extension PassageViewController {
+    @IBAction func refreshItemClick(_ sender: AnyObject) {
+        passageVM.passageModels.removeAll()
+        currentPage = 1
+        loadData()
+    }
+    @IBAction func exportItemClick(_ sender: AnyObject) {
+        
+    }
+}
 
 //MARK:- 请求数据
 extension PassageViewController {
     fileprivate func loadData(){
-//        HUD.show(.progress)
+        HUD.show(.progress)
         passageVM.loadPassageData {
-//            HUD.hide()
+            HUD.hide()
             self.carousel.reloadData()
+            if (self.currentPage == 1) {
+                self.carousel.scrollToItem(at: 0, animated: false)
+            }
         }
     }
 }
@@ -102,7 +117,7 @@ extension PassageViewController: iCarouselDataSource,iCarouselDelegate {
     func carouselDidScroll(_ carousel: iCarousel){
         if (Int(carousel.scrollOffset) + 1)/10 == currentPage {
             currentPage += 1
-            print("++++")
+//            print("++++")
             HUD.show(.progress)
             passageVM.loadPassageData(currentPage, finishedCallBack: {
                 HUD.hide()

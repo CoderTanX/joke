@@ -417,7 +417,7 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = PJB3LYFWDE;
 						LastSwiftMigration = 0800;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					EA95AF581DD72B04003E51FF = {
 						CreatedOnToolsVersion = 8.0;
@@ -702,12 +702,16 @@
 			baseConfigurationReference = C8996E804984F416949E9D04 /* Pods-Joke.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: tan anxi (PJB3LYFWDE)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: tan anxi (PJB3LYFWDE)";
 				DEVELOPMENT_TEAM = PJB3LYFWDE;
 				INFOPLIST_FILE = Joke/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bogaara.Joke;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SixDa.Joke;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "088cbd8f-d518-4fd5-916c-e7cdb2d3ca72";
+				PROVISIONING_PROFILE_SPECIFIER = joke3;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -717,12 +721,16 @@
 			baseConfigurationReference = DAC7AB8AA33A07800E488D29 /* Pods-Joke.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: tan anxi (PJB3LYFWDE)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: tan anxi (PJB3LYFWDE)";
 				DEVELOPMENT_TEAM = PJB3LYFWDE;
 				INFOPLIST_FILE = Joke/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bogaara.Joke;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SixDa.Joke;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "088cbd8f-d518-4fd5-916c-e7cdb2d3ca72";
+				PROVISIONING_PROFILE_SPECIFIER = joke3;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

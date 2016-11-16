@@ -47,13 +47,24 @@ extension PassageViewController {
 }
 //MARK:- 监听点击数据
 extension PassageViewController {
+    //刷新
     @IBAction func refreshItemClick(_ sender: AnyObject) {
         passageVM.passageModels.removeAll()
         currentPage = 1
         loadData()
     }
+    //复制
     @IBAction func exportItemClick(_ sender: AnyObject) {
-        
+        let actionSheet = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        actionSheet.addAction(UIAlertAction(title: "保存本条到剪贴板", style: .default, handler: { (_) in
+            let pasteboard = UIPasteboard.general
+            let passage = self.passageVM.passageModels[self.carousel.currentItemIndex]
+            pasteboard.string = passage.content
+            HUD.flash(.labeledSuccess(title: "保存成功", subtitle: nil), delay: 1)
+            
+        }))
+        actionSheet.addAction(UIAlertAction(title: "取消", style: .cancel, handler: nil))
+        present(actionSheet, animated: true, completion: nil)
     }
 }
 
